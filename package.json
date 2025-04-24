@@ -19,6 +19,7 @@
     "autoprefixer": "^10.4.21",
     "axios": "^1.8.4",
     "chart.js": "^4.4.9",
+    "chartjs-adapter-date-fns": "^3.0.0",
     "lucide-react": "^0.503.0",
     "postcss": "^8.5.3",
     "react": "^19.0.0",
