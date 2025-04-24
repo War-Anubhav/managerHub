@@ -169,27 +169,31 @@ const ManagerDashboard = () => {
                             <h3 className="text-lg font-medium text-white">Project Timeline</h3>
                         </div>
                         <div className="p-6">
-                            <ProjectTimeline selectedMonth={selectedMonth} />
+                            <ProjectTimeline selectedMonth={selectedMonth}/>
                         </div>
                     </div>
-                    <div className="bg-white overflow-hidden shadow rounded-lg">
-                        <div className="bg-red-600 px-4 py-3">
-                            <h3 className="text-lg font-medium text-white">Blockers & Risks</h3>
+                    <div className="space-y-6">
+                        {/* Blockers Section */}
+                        <div className="bg-white overflow-hidden shadow rounded-lg">
+                            <div className="bg-red-600 px-4 py-3 rounded-t-lg">
+                                <h3 className="text-lg font-medium text-white">Blockers & Risks</h3>
+                            </div>
+                            <div className="p-6">
+                                <BlockersOverview/>
+                            </div>
                         </div>
-                        <div className="p-6">
-                            <BlockersOverview />
-                        </div>
-                    </div>
-                </div>
 
-                {/* Bottom Row - Recommendations */}
-                <div className="bg-white shadow rounded-lg">
-                    <div className="bg-purple-600 px-4 py-3">
-                        <h3 className="text-lg font-medium text-white">AI-Powered Recommendations</h3>
+                        {/* Recommendations Section */}
+                        <div className="bg-white overflow-hidden shadow rounded-lg">
+                            <div className="bg-purple-600 px-4 py-3 rounded-t-lg">
+                                <h3 className="text-lg font-medium text-white">AI-Powered Recommendations</h3>
+                            </div>
+                            <div className="p-6">
+                                <Recommendations/>
+                            </div>
+                        </div>
                     </div>
-                    <div className="p-6">
-                        <Recommendations />
-                    </div>
+
                 </div>
             </div>
         </div>

@@ -18,15 +18,19 @@
     "@tailwindcss/vite": "^4.1.4",
     "autoprefixer": "^10.4.21",
     "axios": "^1.8.4",
+    "chart.js": "^4.4.9",
     "lucide-react": "^0.503.0",
     "postcss": "^8.5.3",
     "react": "^19.0.0",
+    "react-calendar": "^5.1.0",
+    "react-chartjs-2": "^5.3.0",
     "react-datepicker": "^8.3.0",
     "react-dom": "^19.0.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.5.1",
     "recharts": "^2.15.3",
-    "tailwindcss": "^4.1.4"
+    "tailwindcss": "^4.1.4",
+    "vis-timeline": "^7.7.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
