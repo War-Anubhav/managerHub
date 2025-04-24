@@ -15,7 +15,7 @@ const ProjectSummary = () => {
     const year = selectedDate.getFullYear().toString();
     const month = String(selectedDate.getMonth() + 1).padStart(2, '0');
     const dateKey = `${year}-${month}`;
-    const url = "";
+    const url = `https://work-summaries.s3.us-east-1.amazonaws.com/work-summaries/projects/${dateKey}.json`;
 
     useEffect(() => {
         const fetchData = async () => {

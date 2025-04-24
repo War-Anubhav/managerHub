@@ -25,8 +25,7 @@ const TeamSummaryOverview = () => {
 
             for (const member of reports) {
                 const email = member.email;
-                const url = ``;
-
+                const url = `https://work-summaries.s3.us-east-1.amazonaws.com/work-summaries/${encodeURIComponent(email)}/${year}-${monthNum}.json`;
                 try {
                     const { data } = await axios.get(url);
                     results[email] = data;
