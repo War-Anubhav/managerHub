@@ -14,7 +14,7 @@ const MemberReport = () => {
     const [error, setError] = useState(null);
 
     const dateKey = `${year}-${month}`;
-    const url = `s3-url`;
+    const url = `https://work-summaries.s3.us-east-1.amazonaws.com/work-summaries/${encodeURIComponent(decodedEmail)}/${dateKey}.json`;
 
     const monthName = new Date(parseInt(year), parseInt(month) - 1).toLocaleString('default', { month: 'long' });
 

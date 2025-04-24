@@ -19,7 +19,7 @@ const TeamSummaryOverview = () => {
 
             for (const member of reports) {
                 const email = member.email;
-                const url = `<s3-url>`;
+                const url = `https://work-summaries.s3.us-east-1.amazonaws.com/work-summaries/${encodeURIComponent(email)}/${year}-${monthNum}.json`;
 
                 try {
                     const { data } = await axios.get(url);
@@ -38,8 +38,8 @@ const TeamSummaryOverview = () => {
 
     const getActivityStatus = (summary) => {
         if (!summary) return { color: "gray", text: "No Data" };
-        if (summary.email_count > 100) return { color: "green", text: "Very Active" };
-        if (summary.email_count > 50) return { color: "blue", text: "Active" };
+        if (summary.email_count > 10) return { color: "green", text: "Very Active" };
+        if (summary.email_count > 5) return { color: "blue", text: "Active" };
         return { color: "yellow", text: "Low Activity" };
     };
 
