@@ -8,7 +8,7 @@ const TeamVerticalList = () => {
 
     return (
         <div className="bg-white p-4 rounded shadow max-w-md ml-auto">
-            <h2 className="text-xl font-semibold mb-4">Team Structure</h2>
+            {/*<h2 className="text-xl font-semibold mb-4">Team Structure</h2>*/}
             <ul className="border-l-2 border-gray-300 pl-4 space-y-2">
                 {manager && (
                     <li className="mb-2">
